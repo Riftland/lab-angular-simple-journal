@@ -1,0 +1,8 @@
+<section class="entry-wrapper">
+    <div *ngFor='let item of list'>
+      <article class="item">
+        <h4>{{item.title}}</h4>
+        <h5>{{item.date | date: 'dd/MM/yyyy'}}</h5>
+      </article>
+    </div>
+  </section>
