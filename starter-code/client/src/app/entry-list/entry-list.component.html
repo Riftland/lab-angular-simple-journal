@@ -1,5 +1,6 @@
 <section class="entry-wrapper">
     <div *ngFor='let item of list'>
+      <a [routerLink]="['/entries', item._id]">A item</a>
       <article class="item">
         <h4>{{item.title}}</h4>
         <h5>{{item.date | date: 'dd/MM/yyyy'}}</h5>
